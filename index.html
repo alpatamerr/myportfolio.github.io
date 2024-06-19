@@ -5,47 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="./resources/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-    <body>
+    <body class="light-mode">
         <nav>
             <h2 id="logo">Alp Atamer</h2>
                 <ul class="navigation-items">
-                    <li class="navigation-items">
+                    <li class="navigation-item">
                         <a href="#about-me">About Me</a>
                     </li>
-                    <li class="navigation-items">
+                    <li class="navigation-item">
                         <a href="#projects">Projects</a>
                     </li>
-                    <li class="navigation-items">
+                    <li class="navigation-item">
                         <a href="#skills">Skills</a>
                     </li>
-                    <li class="navigation-items">
-                        <a href="#Contact"></a>
+                    <li class="navigation-item">
+                        <a href="#contact">Contact</a>
                     </li>
-                </ul>
-            </nav>
-            <main>
-                <section id="about-me">
-                    <div class="about-me-container">
-                        <div class="about-me-text-container">
-                            <h2>About Me</h2>
-                                <p>Hi! I am Alp, am an Software Engineer and Computer Science Masters Degree holder in UoB.</p>
-                                <p>In my free time I like to running, and collecting music albums.</p>
-                                <p>I started my code journey via Codeacademy!</p>
-                        </div>
-                        <img src="./images/alp.jpeg" alt="A photo of me" class="portrait">
-                    ,</div>
-                </section>
-                <section id="projects">
-                    <h2>Projects</h2>
-
-                </section>
+                    <li class="navigation-item dropdown">
+                        <a href="#">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="toggle-mode">Toggle Dark Mode</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about-me">
+                <div class="about-me-container">
+                    <div class="about-me-text-container">
+                        <h2>About Me</h2>
+                        <p>Hi! I am Alp, am an Software Engineer and Computer Science Masters Degree holder in UoB.</p>
+                        <p>In my free time I like to running, and collecting music albums.</p>
+                        <p>I started my code journey via Codeacademy!</p>
+                    </div>
+                    <img src="./images/alp.jpeg" alt="A photo of me" class="portrait" id="portrait-photo">
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <details class="project">
+                    <summary class="project-title">
+                      <h3>The first fashion website</h3>
+                    </summary>
+                    <p class="project-description">
+                        <p><a href="https://github.com/alpatamerr/AAfashion.github.io" target="_blank">Github page for the fashion website</a></p>
+                        <p><a href="https://alpatamerr.github.io/AAfashion.github.io/" target="_blank">Live page for the website</a></p>
+                    </details>
+                    <details class="project">
+                        <summary class="project-title">
+                          <h3>Message Generator</h3>
+                        </summary>
+                        <p class="project-description">
+                            The project was developed for the Mixed Messages Project, part of the Full-Stack Engineer Career Path in Codecademy.
+                        </p>
+                        <p><a href="https://github.com/alpatamerr/message-generator" target="_blank">Github page for the message generator</a></p>
+                    </details>
+            </section>
                 <section id="skills">
                     <h2>Skills</h2>
                     <div id="skills-container">
-                        
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
                     </div>
                 </section>
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p><a href="mailto:alpatamer@gmail.com">Please contact me</a></p>
+                </section>
             </main>
+            <script src="./resources/script.js"></script>
         </body>
     </html>

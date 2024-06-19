@@ -37,6 +37,29 @@ nav {
     text-decoration: none;
 }
 
+.navigation-item {
+  margin-right: 1em;
+}
+
+.navigation-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Use the same color as the text */
+}
+
+.dropdown-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
   
 .about-me-container {
     display: flex;
@@ -47,9 +70,18 @@ nav {
     margin-left: auto;
     flex-shrink: 0;
   }
-  
-.project-title h3 {
-    display: inline;
-  }
 
+  #skills-container i {
+    font-size: 2em; /* Adjust size as needed */
+    margin: 0.5em;
+}
   
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
